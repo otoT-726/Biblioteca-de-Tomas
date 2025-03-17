@@ -4,7 +4,7 @@ import random
 print('Generador de claves! ')
 
 chars = string.ascii_letters + string.digits + string.punctuation
-leng = 10
+leng = int(input('Ingrese la longitud de su contraseña. '))
 password = ''
 
 for _ in range(leng):
