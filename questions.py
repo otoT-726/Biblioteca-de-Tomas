@@ -53,5 +53,6 @@ for _ in range(3):
         print(answers[question_index][correct_answers_index[question_index]])
 
 print('Puntaje final: ', puntaje)
+
 # Se imprime un blanco al final de la pregunta
 print()
