@@ -1,4 +1,4 @@
-from src.chequearZen import chequearZen
+from src.chequearZen import chequear
 from src.devolverMayorTitulo import devolverMayor
 
 #Ejercicio 1 :
@@ -24,7 +24,7 @@ If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
         """
 
-print(chequearZen(zen))
+print(chequear(zen))
 
 
 #Ejercicio 2 :

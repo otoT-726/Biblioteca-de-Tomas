@@ -1,4 +1,4 @@
-def chequearZen(zen):
+def chequear(zen):
     """Imprime todas las lineas del zen de python cuya segunda palabra empieza con vocal."""
     vocal = ("a", "e", "i", "o", "u", "A", "E", "I", "O", "U")
     lista_zen= zen.splitlines()
