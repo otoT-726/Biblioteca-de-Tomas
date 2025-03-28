@@ -1,4 +1,7 @@
 from src.chequearZen import chequearZen
+from src.devolverMayorTitulo import devolverMayor
+
+#Ejercicio 1 :
 
 zen = """Beautiful is better than ugly.
 Explicit is better than implicit.
@@ -22,3 +25,15 @@ Namespaces are one honking great idea -- let's do more of those!
         """
 
 print(chequearZen(zen))
+
+
+#Ejercicio 2 :
+
+titulos =  [
+"Speedrun de Super Mario en tiempo récord",
+"Charla sobre desarrollo de videojuegos",
+"Jugando al nuevo FPS del momento con amigos",
+"Música en vivo: improvisaciones al piano"
+]
+
+print(devolverMayor(titulos))
