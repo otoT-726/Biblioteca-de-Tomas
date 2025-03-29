@@ -1,7 +1,10 @@
-from src.chequearZen import chequear
-from src.devolverMayorTitulo import devolverMayor
+#Aclaracion: Se que los imports se ponen al inicio del programa pero los hice asi para que se pueda buscar mas facil la funcion que se necesita.
+
+
 
 #Ejercicio 1 :
+
+from chequearZen import chequear
 
 zen = """Beautiful is better than ugly.
 Explicit is better than implicit.
@@ -29,6 +32,8 @@ print(chequear(zen))
 
 #Ejercicio 2 :
 
+from devolverMayorTitulo import devolverMayor
+
 titulos =  [
 "Speedrun de Super Mario en tiempo récord",
 "Charla sobre desarrollo de videojuegos",
@@ -37,3 +42,20 @@ titulos =  [
 ]
 
 print(devolverMayor(titulos))
+
+
+#Ejercicio 3 :
+
+from codigoConducta import buscarReglas
+
+rules = """Respeta a los demás. No se permiten insultos ni lenguaje
+ofensivo.
+Evita el spam. No publiques enlaces sospechosos o repetitivos.
+No compartas información personal.
+Usa los canales adecuados para cada tema.
+Sigue las instrucciones de los moderadores.
+"""
+
+
+pal = input("Ingresa la palabra buscada: ")
+print(buscarReglas(rules, pal))
