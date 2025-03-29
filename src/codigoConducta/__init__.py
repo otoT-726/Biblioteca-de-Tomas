@@ -3,10 +3,10 @@ def buscarReglas(rules, palabra):
     reglas = rules.split(".")
     text= ""
     for i in reglas:
-        if palabra in i:
+        if palabra in i.lower():
             text += i + "\n"
     if(text != None and text != ""):
-        text = "Las reglas que contienen la palabra son: " + text
+        text = "Las reglas que contienen la palabra son: \n" + text
     else:
         text = "No se encontraron reglas que contengan la palabra."
     return text

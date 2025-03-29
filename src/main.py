@@ -59,3 +59,11 @@ Sigue las instrucciones de los moderadores.
 
 pal = input("Ingresa la palabra buscada: ")
 print(buscarReglas(rules, pal))
+
+
+#Ejercicio 4 :
+
+from validarUsuario import validar_usuario
+
+clave = input("Ingrese el nombre de usuario: ")
+print(validar_usuario(clave))
