@@ -79,7 +79,7 @@ print(tiempo_reaccion(time))
 #Ejercicio 6 : Dadas varias descripciones de streams en Twitch, cuente cuántas menciones hay de
 #              "entretenimiento", "música" y "charla".
 
-from buscarPalabras import buscarPalabras
+from buscarPalabras import buscar_palabras
 
 descriptions = [
 "Streaming de música en vivo con covers y composiciones",
@@ -92,7 +92,15 @@ descriptions = [
 "Un espacio para charlar relajada sobre tecnología y cultura digital",
 "Exploramos el impacto de la música en los videojuegos clásicos"]
 
-buscarPalabras(descriptions)
+buscar_palabras(descriptions)
 
 
-#Ejercicio 7 :
+#Ejercicio 7 : Genere un código de descuento aleatorio para un usuario en base a su nombre, la fecha actual y el resto deben ser números o letras aleatorias.
+#              El código debe tener una longitud de 30 caracteres, todas las letras deben ser mayúsculas.
+#              El usuario debe ingresarse por teclado y debe validar que no exeda los 15 caracteres.
+
+from generarClaves import generar_clave
+
+usuario = input("Ingrese el nombre de usuario: ")
+if(generar_clave(usuario) != None):
+    print("Codigo de descuento: " + generar_clave(usuario))
