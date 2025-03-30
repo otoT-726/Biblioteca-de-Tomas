@@ -67,3 +67,13 @@ from validarUsuario import validar_usuario
 
 clave = input("Ingrese el nombre de usuario: ")
 print(validar_usuario(clave))
+
+
+#Ejercicio 5 :
+
+from reactTime import tiempo_reaccion
+
+time = int(input("Ingrese el tiempo de reaccion en milisegundos: "))
+print(tiempo_reaccion(time))
+
+#Ejercicio 6 :
