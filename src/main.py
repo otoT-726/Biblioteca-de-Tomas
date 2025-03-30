@@ -117,3 +117,26 @@ if anagramas(palabra1, palabra2):
     print("Son anagramas")
 else:
     print("No son anagramas")
+
+
+#Ejercicio 9 : Limpia los datos de una lista dada.
+
+from limpiarDatos import clean_data
+
+clients = [
+" Ana López ", "Pedro Gómez", "maria martínez", "Pedro Gómez ", "",
+" Luis Rodríguez ", None, "ana lópez", "JUAN PÉREZ", "MARTA SUÁREZ",
+"luis rodríguez", "maría martínez ", " claudia torres", "CLAUDIA TORRES",
+" ", "pedro gómez", "Juan Pérez", None, "Ricardo Fernández", "LAURA RAMOS",
+"carlos mendes", "RICARDO FERNÁNDEZ ", " Laura ramos", "CARLOS MENDES",
+"alejandro gonzález", " ALEJANDRO GONZÁLEZ ", "Patricia Vega",
+"patricia VEGA", "Andrés Ocampo", " andrés ocampo", "Monica Herrera",
+"MONICA HERRERA ", "gabriela ruíz", "Gabriela Ruíz", "sandra morales",
+"SANDRA MORALES", "miguel ángel", "Miguel Ángel ", " Damián Castillo",
+"Damián Castillo ", None, "", " "
+]
+
+lista_limpia = clean_data(clients)
+print(lista_limpia)
+
+#COMENTARIO: El unico dato que no pude limpiar es la tilde de "María Martinez".
