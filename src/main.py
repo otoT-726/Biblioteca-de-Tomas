@@ -76,4 +76,23 @@ from reactTime import tiempo_reaccion
 time = int(input("Ingrese el tiempo de reaccion en milisegundos: "))
 print(tiempo_reaccion(time))
 
-#Ejercicio 6 :
+#Ejercicio 6 : Dadas varias descripciones de streams en Twitch, cuente cuántas menciones hay de
+#              "entretenimiento", "música" y "charla".
+
+from buscarPalabras import buscarPalabras
+
+descriptions = [
+"Streaming de música en vivo con covers y composiciones",
+"Charla interactiva con la audiencia sobre series y películas",
+"Jugamos a juegos retro y charlamos sobre su historia",
+"Exploramos la mejor música de los 80s y 90s",
+"Programa de entretenimiento con noticias y curiosidades del mundo gamer",
+"Sesión de charla con invitados especiales del mundo del streaming",
+"Música en directo con improvisaciones y peticiones del chat",
+"Un espacio para charlar relajada sobre tecnología y cultura digital",
+"Exploramos el impacto de la música en los videojuegos clásicos"]
+
+buscarPalabras(descriptions)
+
+
+#Ejercicio 7 :
