@@ -104,3 +104,16 @@ from generarClaves import generar_clave
 usuario = input("Ingrese el nombre de usuario: ")
 if(generar_clave(usuario) != None):
     print("Codigo de descuento: " + generar_clave(usuario))
+
+
+#Ejercicio 8 : Determine si dos palabras ingresadas son anagramas (contienen las mismas letras en diferente orden).
+
+from anagramas import anagramas
+
+palabra1 = input("Ingrese la primera palabra: ")
+palabra2 = input("Ingrese la segunda palabra: ")
+
+if anagramas(palabra1, palabra2):
+    print("Son anagramas")
+else:
+    print("No son anagramas")
